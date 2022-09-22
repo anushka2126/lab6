@@ -27,3 +27,20 @@ Select COUNT(annual_income) from tblParents where annual_income >600000;
 
 /*Question 4(Code)/*
 Select * from tblParents where city IN ('Delhi','Ahmedabad', 'Mumabi','Banglore','Chennai');
+
+
+/*Question 5(Code)/*
+Select * from tblParents where annual_income <500000 or age >45;
+
+/* Question 6 (Code) /*
+Create table student (parent_id int, student_name varchar(50), maths_marks int, science_marks int, foreign key (parent_id) references tblParents(parent_id));
+Insert into student values (101, 'Shivam', 45, 34);
+Insert into student values (202, 'Ravi', 66, 37);
+Insert into student values (203, 'Anu', 58, 50);
+Insert into student values (204, 'Parveen', 69, 84);
+Insert into student values (105, 'Param', 49, 62);
+Insert into student values (104, 'Rani', 77, 55);
+Insert into student values (103, 'Riva', 35, 83);
+Insert into student values (205, 'Sikha', 85, 76);
+Insert into student values (108, 'Sanam', 67, 57);
+Select * from student;

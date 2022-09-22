@@ -1,0 +1,29 @@
+/*Question 1 and 2(Code)/*
+Create table tblParents (parent_id int, parents_name varchar(80), city varchar(50), age int, annual_income int, occupation varchar(40), email_id varchar(70));
+Insert into tblParents values (101, 'Anshu', 'Ranchi', 35, 9000000, 'Electrical engineer', 'N/A');
+Insert into tblParents values (102, 'Rahul', 'Delhi', 40, 500000, 'Elecrtical engineer', 'N/A');
+Insert into tblParents values (103, 'Ayesha', 'Mumabi', 51, 2000000, 'Software engineer', 'N/A');
+Insert into tblParents values (104, 'Amit', 'Banglore', 50, 500000, 'Software engineer', 'N/A');
+Insert into tblParents values (105, 'Ratul', 'Ahmedabad', 40, 490000, 'Biotech engineer', 'N/A');
+Insert into tblParents values (106, 'Riya', 'Ahmedabad', 49, 290000, 'Software engineer', 'N/A');
+Insert into tblParents values (107, 'Reet', 'Mohali', 45, 900000, 'Civil engineer', 'N/A');
+Insert into tblParents values (108, 'Honey', 'Delhi', 42, 290000, 'Software engineer', 'N/A');
+Insert into tblParents values (109, 'Himanshu', 'Chennai', 43, 209000, 'Software engineer', 'N/A');
+Insert into tblParents values (110, 'Shiv', 'Delhi', 45, 209000, 'Software engineer', 'N/A');
+Insert into tblParents values (201, 'Saloni', 'Mohali', 45, 329000, 'Software engineer', 'N/A');
+Insert into tblParents values (202, 'Raj', 'Mumabi', 45, 702000, 'Software engineer', 'N/A');
+Insert into tblParents values (203, 'Rishi', 'Mohali', 45, 840000, 'Mechanical  engineer', 'N/A');
+Insert into tblParents values (204, 'Ravi', 'Mohali', 46, 290000, 'Software engineer', 'N/A');
+Insert into tblParents values (205, 'Arah', 'Mohali', 45, 290000, 'Computer  engineer', 'N/A');
+Insert into tblParents values (206, 'Aaashu', 'Mohali', 48, 290000, 'Software engineer', 'N/A');
+Insert into tblParents values (207, 'Eswin', 'Mumabi', 45, 290000, 'Software engineer', 'N/A');
+Insert into tblParents values (208, 'Kajol', 'Ahmedabad', 44, 290000, 'Software engineer', 'N/A');
+Insert into tblParents values (209, 'Riva', 'Delhi', 45, 800000, 'Software engineer', 'N/A');
+Insert into tblParents values (210, 'Hitesh', 'Ahmedabad', 53, 800000, 'Software engineer', 'N/A');
+Select * from tblParents;
+
+/*Question 3(Code)/*
+Select COUNT(annual_income) from tblParents where annual_income >600000;
+
+/*Question 4(Code)/*
+Select * from tblParents where city IN ('Delhi','Ahmedabad', 'Mumabi','Banglore','Chennai');
